@@ -5,6 +5,7 @@ header {
   align-items: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
+  font-weight: 600;
 
 
   .navbar ul {
@@ -12,9 +13,10 @@ header {
     gap: 40px;
     text-decoration: none;
     list-style: none;
+    cursor: pointer;
   }
 
   .button{
-    padding: 0 30px;
+    padding: 0 60px;
   }
 }
