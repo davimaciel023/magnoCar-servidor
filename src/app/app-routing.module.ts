@@ -10,7 +10,7 @@ import { ContatoComponent } from './componente/pages/contato/contato.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'cabecalho',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {

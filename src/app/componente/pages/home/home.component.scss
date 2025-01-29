@@ -11,7 +11,11 @@ main{
             justify-content: space-between;
             align-items: center;
             padding: 4rem;
-            
+
+            .image {
+
+            }
+
             .texto-direita {
                 width: 50%;
                 h2 {
@@ -21,13 +25,13 @@ main{
                         color: #990401;
                     }
                 }
-                
+
                 p {
                     font-size: 1.2rem;
                     margin-bottom: 2rem;
                     line-height: 1.6;
                 }
-                
+
                 button {
                     background-color: #990401;
                     color: #fff;
@@ -36,7 +40,7 @@ main{
                     border-radius: 2rem;
                     font-size: 1.2rem;
                     cursor: pointer;
-                    
+
                     &:hover {
                         transform: scale(1.1);
                         transition: 0.3s;
@@ -58,10 +62,14 @@ main{
             .container{
                 display: flex;
                 color: #fff;
-                gap: 2rem;
+                gap: 1rem;
+
+                img {
+                  max-width: 30px;
+                }
             }
         }
-            
+
         .image{
             background-color: #990401;
             position: absolute;
@@ -72,7 +80,11 @@ main{
                 width: 500px;
                 height: 500px;
             }
-            
+
         }
     }
+}
+
+@media screen {
+
 }
