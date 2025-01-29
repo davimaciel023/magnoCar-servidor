@@ -1,12 +1,20 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
 header {
   padding: 0 84px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
-
+  background-color: transparent;
+  
+  img{
+    max-height: 40%;
+    max-width: 85%;
+  }
 
   .navbar ul {
     display: flex;
@@ -18,5 +26,41 @@ header {
 
   .button{
     padding: 0 60px;
+    display: flex;
+    gap: 38px;
+    .button-contato{
+      background-color: transparent;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: 2px solid #000;
+      height: 40px;
+      width: 154px;
+
+      &:hover{
+        background-color: #000;
+        color: #fff;
+        transform: scale(1.20);
+        transition: 0.5s;
+      }
+    }
+    .button-login{
+      background-color:#990401;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+      height: 40px;
+      width: 154px;
+
+      &:hover{
+        color: #fff;
+        transform: scale(1.20);
+        transition: 0.5s;
+      }
+    }
   }
 }
