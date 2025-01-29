@@ -1,0 +1,78 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    background-color: bisque;
+    height: 100vh;
+    width: 100%;
+    section{
+        .infos-principais{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4rem;
+            
+            .texto-direita {
+                width: 50%;
+                h2 {
+                    font-size: 3rem;
+                    margin-bottom: 2rem;
+                    span {
+                        color: #990401;
+                    }
+                }
+                
+                p {
+                    font-size: 1.2rem;
+                    margin-bottom: 2rem;
+                    line-height: 1.6;
+                }
+                
+                button {
+                    background-color: #990401;
+                    color: #fff;
+                    border: none;
+                    padding: 1rem 2rem;
+                    border-radius: 2rem;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                    
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+        .info-contato{
+            background-color:#990401;
+            display: flex;
+            padding: 2rem;
+            gap: 5rem;
+            width: 60%;
+            border-radius: 90px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -12vh;
+            .container{
+                display: flex;
+                color: #fff;
+                gap: 2rem;
+            }
+        }
+            
+        .image{
+            background-color: #990401;
+            position: absolute;
+            right: 10%;
+            border-radius: 100px 100px 100px 240px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            img{
+                width: 500px;
+                height: 500px;
+            }
+            
+        }
+    }
+}
