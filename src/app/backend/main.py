@@ -9,21 +9,22 @@ def carregar_dados():
     try:
         with open('db.json', 'r') as file:
             dados = json.load(file)
-            return dados.get('carros', []), dados.get('produtos', [])
+            return dados.get('carros', []), dados.get('produtos', []), dados.get('usuarios', [])
     except FileNotFoundError:
         return [], []
     except json.JSONDecodeError:
         return [], []
     
-def salvar_dados(carros, produtos):
+def salvar_dados(carros, produtos, usuarios):
     dados = {
         'carros': carros,
-        'produtos': produtos
+        'produtos': produtos,
+        'usuarios': usuarios
               }
     with open('db.json', 'w') as file:
         json.dump(dados, file, indent=4)
 
-carros, produtos = carregar_dados()
+carros, produtos, usuarios = carregar_dados()
     
 @app.post("/carros/criar")
 async def criarCarro(
@@ -65,3 +66,36 @@ async def criarProdutos(
 @app.get("/carros/produtos")
 async def getProdutos():
     return produtos
+
+@app.post("/cadastroDeUsuario")
+async def cadastroDeUsuario(
+    nomeDoUsuario: str = Form(...),
+    email: str = Form(...),
+    modeloCarro: str = Form(...),
+    senha: str = Form(...)
+):
+    usuario = {
+        "nomeDoUsuario": nomeDoUsuario,
+        "email": email,
+        "modeloCarro": modeloCarro,
+        "senha": senha,
+    }
+    usuarios.append(usuario)
+    salvar_dados(carros, produtos, usuarios)
+    return ('usuario cadastrado com sucesso')
+
+@app.get("/usuarios")
+async def getUsuarios():
+    return usuarios
+
+
+@app.post("/login")
+async def login(
+    email: str = Form(...),
+    senha: str = Form(...)
+):
+    for usuario in usuarios:
+        if usuario['email'] == email and usuario['senha'] == senha:
+            return ('usuario logado com sucesso')
+    return ('usuario ou senha incorretos')
+

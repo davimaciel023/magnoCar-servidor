@@ -1,4 +1,12 @@
 {
     "carros": [],
-    "produtos": []
+    "produtos": [],
+    "usuarios": [
+        {
+            "nomeDoUsuario": "tales",
+            "email": "amas",
+            "modeloCarro": "bicicleta",
+            "senha": "123"
+        }
+    ]
 }
