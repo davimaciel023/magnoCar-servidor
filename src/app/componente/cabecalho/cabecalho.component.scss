@@ -1,0 +1,16 @@
+header {
+  padding: 0 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+
+
+  .navbar ul {
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+    list-style: none;
+  }
+}
