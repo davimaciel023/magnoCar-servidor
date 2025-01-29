@@ -2,7 +2,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 main{
-    background-color: bisque;
+    background-color: #f5f2d0;
     height: 100vh;
     width: 100%;
     section{
@@ -51,9 +51,7 @@ main{
             gap: 5rem;
             width: 60%;
             border-radius: 90px;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
+            transform: translateX(30%);
             bottom: -12vh;
             .container{
                 display: flex;
@@ -61,25 +59,31 @@ main{
                 gap: 1rem;
 
                 img {
-                  max-width: 30px;
+                    max-height: 30px;
                 }
             }
         }
 
         .image{
-            background-color: #990401;
-            position: absolute;
-            right: 10%;
+            position: relative;
+            overflow: visible;
             border-radius: 100px 100px 100px 240px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: #990401;
             img{
-                width: 600px;
-                height: 500px;
+                width: 580px;
+                height: auto;
+                top: 50%;
+                left: 50%;
+                transform: translate(-20%);
+                z-index: 10;
+                &:hover{
+                    transform: scale(1.20);
+                    transition: 0.5s;
+                }
             }
-          }
+        }
     }
 }
-
 @media (max-width: 1538px){
   .infos-principais {
     display: none;
