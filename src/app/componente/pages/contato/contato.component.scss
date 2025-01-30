@@ -17,23 +17,24 @@ main{
         font-size: 24px;
         .nomeCompleto{
             display: flex;
-            gap: 1rem;
-            width: 900px;
+            gap: 0.5rem;
+            width: 120%;
         }
         .contatos{
             display: flex;
-            gap: 1rem;
-            width: 900px;
+            gap: 0.5rem;
+            width: 120%;
         }
         .problemas{
             display: flex;
-            gap: 1rem;
-            width: 201vh;
+            gap: 0.5rem;
+            width: 245%;
+            
         }
         .mensagem{
             display: flex;
-            gap: 1rem;
-            width: 201vh;
+            gap: 0.5rem;
+            width: 245%;
             height: 200px;
         }
         textarea{
