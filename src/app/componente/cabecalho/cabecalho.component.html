@@ -9,13 +9,12 @@
         <li (click)="home()">Home</li>
         <li (click)="sobre()">Sobre</li>
         <li (click)="servico()">Serviços</li>
-        <li (click)="contato()">Contato</li>
       </ul>
     </nav>
   </div>
 
   <div class="button">
-    <button class="button-contato">Contato</button>
+    <button (click)="contato()" class="button-contato">Contato</button>
     <button class="button-login">Login</button>
   </div>
 </header>
