@@ -24,7 +24,6 @@ main{
             justify-content: center;
             flex-direction: column;
             transform: translate(30.5%);
-            color: #990401;
         }
 
         textarea{
@@ -69,6 +68,28 @@ main{
                 color: #fff;
             }
         }
+        }
+        .buttons{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 20px;
+            button{
+                background-color:#990401;
+                color: #fff;
+                border: none;
+                border-radius: 10px;
+                padding: 10px 20px;
+                cursor: pointer;
+                height: 40px;
+                width: 154px;
+
+                &:hover{
+                    color: #fff;
+                    transform: scale(1.20);
+                    transition: 0.5s;
+                }
+            }
         }
     }
 }
