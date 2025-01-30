@@ -8,10 +8,9 @@ main{
         width: 45%;
         padding: 30px 40px;
         max-width: 900px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-        background-color: #fff;
         border-radius: 20px;
         position: absolute;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -21,11 +20,25 @@ main{
             width: 100%;
             height: 100%;
             display: flex;
-            justify-content: center;
-            flex-direction: column;
-            transform: translate(30.5%);
+            gap: 1rem;
+            width: 900px;
         }
-
+        .contatos{
+            display: flex;
+            gap: 1rem;
+            width: 900px;
+        }
+        .problemas{
+            display: flex;
+            gap: 1rem;
+            width: 208vh;
+        }
+        .mensagem{
+            display: flex;
+            gap: 1rem;
+            width: 208vh;
+            height: 200px;
+        }
         textarea{
             width: 40%;
             height: auto;
